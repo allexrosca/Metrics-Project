@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html>
+	<head>
+        {% load static %}
+        <meta charset = "utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'css/dashboard.css' %}"/>
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row justify-content-around mt-3">
+                <div class="col-md-2 d-flex mt-5 border-green align-items-center justify-content-center">
+                    <h6 class="text-orange text-center">Filters</h6>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="display-4 text-center text-grey">Dashboard</h1>
+                        </div>
+                    </div>
+                    <div class="row marginTop">
+                        <div class="col-md-12">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-2 d-flex mt-5 border-green align-items-center justify-content-center">
+                    <h6 class="text-orange text-center">Record Information</h6>
+                </div>
+            </div>
+
+            <div class="row mt-2 justify-content-center">
+                <div class="col-md-8 border-green p-5">
+                    <h6 class="text-green text-center">Data Series</h6>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+        <script src="{% static 'js/dashboard.js' %}"></script>
+    </body>
+</html>

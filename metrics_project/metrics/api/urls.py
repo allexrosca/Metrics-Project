@@ -2,7 +2,7 @@ from django.conf.urls import url
 
 from .views import *
 
-app_name = 'metrics'
+app_name = 'api'
 
 urlpatterns = [
     url(r'^info/$', InfoListView.as_view(), name='info_list_items'),
